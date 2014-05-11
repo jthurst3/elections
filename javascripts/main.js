@@ -30,7 +30,7 @@ $(document).ready(function(){
   sectionHeight();
   
   $('img').load(sectionHeight);
-  get_json(electoral_positions);
+  get_json2("javascripts/positions.json");
 });
 
 fixScale = function(doc) {
