@@ -30,7 +30,7 @@ $(document).ready(function(){
   sectionHeight();
   
   $('img').load(sectionHeight);
-  get_json("javascripts/positions.json");
+  // get_json("javascripts/positions.json");
   // get_json2(electoral_positions);
 });
 
