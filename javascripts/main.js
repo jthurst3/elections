@@ -30,7 +30,8 @@ $(document).ready(function(){
   sectionHeight();
   
   $('img').load(sectionHeight);
-  get_json2("javascripts/positions.json");
+  get_json("javascripts/positions.json");
+  // get_json2(electoral_positions);
 });
 
 fixScale = function(doc) {
@@ -54,6 +55,7 @@ fixScale = function(doc) {
 };
 
 
+// for local development purposes only (GitHub Pages can load JSON from file)
 electoral_positions = {
   "Democrat":{
     "title": "Democrat",
