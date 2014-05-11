@@ -30,7 +30,7 @@ $(document).ready(function(){
   sectionHeight();
   
   $('img').load(sectionHeight);
-  randomize_title("Democrat","Republican");
+  get_json(electoral_positions);
 });
 
 fixScale = function(doc) {
@@ -50,6 +50,25 @@ fixScale = function(doc) {
     fix();
     scales = [.25, 1.6];
     doc[addEvent](type, fix, true);
+  }
+};
+
+
+electoral_positions = {
+  "Democrat":{
+    "title": "Democrat",
+    "subtitle": "I am a democrat.",
+    "text": "I am very liberal. No republican arguments can sway me."
+  },
+  "Republican":{
+    "title": "Republican",
+    "subtitle": "I am a republican.",
+    "text": "I am very conservative. No democratic arguments, especially from Obama, will sway me."
+  },
+  "Independent":{
+    "title": "Independent",
+    "subtitle": "I am neither a democrat nor a republican.",
+    "text": "I have no life."
   }
 };
 
