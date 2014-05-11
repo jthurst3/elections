@@ -30,6 +30,7 @@ $(document).ready(function(){
   sectionHeight();
   
   $('img').load(sectionHeight);
+  randomize_title("Democrat","Republican");
 });
 
 fixScale = function(doc) {
@@ -51,3 +52,6 @@ fixScale = function(doc) {
     doc[addEvent](type, fix, true);
   }
 };
+
+
+
